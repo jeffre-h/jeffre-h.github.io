@@ -383,6 +383,7 @@ header {
 
 .about__description {
   text-align: center;
+  /* margin-top: var(--mb-2); */
   margin-bottom: var(--mb-2-5);
 }
 
@@ -677,6 +678,10 @@ header {
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .about__description {
+    text-align: initial;
+    margin-top: var(--mb-2);
+  }
   .qualification__sections {
     display: grid;
     grid-template-columns: 0.6fr;
@@ -751,6 +756,7 @@ header {
   }
   .about__description {
     text-align: initial;
+    margin-top: var(--mb-2);
   }
   .about__info {
     justify-content: space-between;
@@ -825,6 +831,10 @@ header {
   .home__social {
     transform: translateX(-6rem);
   } */
+  .about__description {
+    text-align: initial;
+    margin-top: var(--mb-2);
+  }
   .portfolio__content {
     column-gap: 5rem;
   }
