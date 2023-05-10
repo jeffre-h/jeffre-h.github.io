@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- iconscouts - unicons -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        
+        <!-- swiper css-->
+        <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+        
+        <!-- css -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Portfolio</title>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">jw</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i> home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> about me
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-monitor nav__icon"></i> projects
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#qualification" class="nav__link"> 
+                                <i class="uil uil-briefcase-alt nav__icon"></i> experiences
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- main -->
+        <main class="main">
+            <!-- home -->
+            <section class="home section" id="home">
+                <div class="container">
+                    <h1 class="section__title">Jeffrey Wong</h1>
+                    <h2 class="section__subtitle">
+                        <p>Driven Student , Aspiring Developer</p>
+                    </h2>
+                    <center>
+                        <a href="https://github.com/jeffre-h" target="_blank"><img class="footer-logo" src="assets/img/github.png"></a>
+                        <a href="https://www.linkedin.com/in/wong-jeffrey" target="_blank"><img class ="footer-logo" src="assets/img/linkedin.png"></a>
+                        <a href="https://www.facebook.com/jeffreywong17" target="_blank"><img class="footer-logo" src="assets/img/facebook.png"></a>
+                        <a href="mailto:jwa334@sfu.ca"><img class="footer-logo" src="assets/img/email.png"></a>
+                    </center>
+                </div>
+                
+            </section>
+
+ 
+            <!-- about me-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">Who Am I?</span>
+
+                <div class="about__container container grid">
+                    <img src="assets/img/gitpp.png" alt="" class="about__img">
+                    
+                    <div class="about__data">
+                        <p class="about__description">
+                            Hi, I'm Jeffrey, a third-year computing science student at SFU. I'm a hardworking individual with a strong desire to learn and expand my skill set. I have experience with a variety of programming languages / technologies, including Python, C, C++, Java, Node.js, Express.js, MongoDB, SQL, HTML, CSS.
+                            Outside of coding, my passions include hockey, music, and exploring the outdoors.
+                        </p>
+
+                        <div class="about__buttons">
+                            <a href="https://docs.google.com/document/d/1gLOyt0MQm9ciwHEm5PYIC63L7TSqyydcr_nQiBjNP3E/edit" target="_blank" class="button button--flex">
+                                Resume<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+ 
+
+            <!-- portfolio-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">My Personal Projects</span>
+
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">   
+                        <!-- Project 1 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/project1.png" alt="" class="portfolio__img">
+                            
+                            <div class="portfolio__data">
+                                <h3 class="porftolio__title">Hospital Bot</h3>
+                                <p class="portfolio__description">
+                                    SMS chat bot that recommends the closest hospitals to users based on real time webscraped hospital wait times and travelling time
+                                </p>
+                                <a href="https://github.com/jeffre-h/HospitalBot" target="_blank" class="button button--flex button--small portfolio__button">
+                                    demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/project2.png" alt="" class="portfolio__img">
+                            
+                            <div class="portfolio__data">
+                                <h3 class="porftolio__title">Bill Wizard (IN PROGRESS)</h3>
+                                <p class="portfolio__description">
+                                    Android and iOS mobile application that helps users manage receipts and split bills among friends. To be implemented with Flutter, ExpressJS, NodeJS, and MongoDB
+                                </p>
+                                <a class="button button--flex button--small portfolio__button">
+                                    currently</br>unavailable
+                                    <!-- IN PRGORESS
+                                        <i class="uil uil-arrow-right button__icon"></i> 
+                                    -->
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/project3.png" alt="" class="portfolio__img">
+                            
+                            <div class="portfolio__data">
+                                <h3 class="porftolio__title">Journey Through Mordor</h3>
+                                <p class="portfolio__description">
+                                    2D Java arcade-style maze game based on "the Lord of the Rings" series. Players must collect all the necessities, reach Mount Doom, and not get caught in the process!
+                                </p>
+                                <a href="https://github.com/jeffre-h/Journey-Through-Mordor" target="_blank" class="button button--flex button--small portfolio__button">
+                                    demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project 4 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/project4.png" alt="" class="portfolio__img">
+                            
+                            <div class="portfolio__data">
+                                <h3 class="porftolio__title">NHL Machine Learning Model</h3>
+                                <p class="portfolio__description">
+                                    Machine Learning Model trained using historical NHL data to provide a prediction on the next NHL Hart Trophy Winner (MVP)
+                                </p>
+                                <a href="https://github.com/jeffre-h/Machine-Learning-Model---NHL-MVP-Prediction" target="_blank" class="button button--flex button--small portfolio__button">
+                                    demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- arrows -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+                    <!-- pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+
+            <!-- experiences -->
+            <section class="qualification section" id="qualification">
+                <h2 class="section__title">Experiences</h2>
+                <span class="section__subtitle">My Journey</span>
+          
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target="#education">
+                            <i class="uil uil-graduation-cap qualification__icon"> </i> Education
+                        </div>
+          
+                        <div class="qualification__button button--flex" data-target="#work">
+                            <i class="uil uil-briefcase-alt qualification__icon"> </i> Work
+                        </div>
+                    </div>
+          
+                    <div class="qualification__sections">
+                    <!-- Education Experience-->
+                        <div class="qualification__content qualification__active" data-content id="education">
+                      <!-- hs -->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Dogwood Diploma</h3>
+                                    <span class="qualification__subtitle"> Killarney Secondary School </span>
+                                    <div class="qualification__calender">
+                                        <i class="uil uil-calendar-alt"></i> 2015-2020
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+          
+                      <!-- university-->
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                </div>
+                                <div>
+                                    <h3 class="qualification__title">B.Sc Computing Science, Mathematics Minor</h3>
+                                    <span class="qualification__subtitle"> Simon Fraser University </span>
+                                    <div class="qualification__calender">
+                                        <i class="uil uil-calendar-alt"></i> 2020-Present
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+          
+                    <!-- Job Experience-->
+                    <div class="qualification__content" data-content id="work">
+                      <!-- job 1-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Cashier</h3>
+                                <span class="qualification__subtitle"> Kyuzo Japanese Restaurant </span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i> 2019
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+          
+                      <!-- job 2-->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Maths Tutor</h3>
+                                <span class="qualification__subtitle"> Quantum Academy </span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i> 2022-Present
+                                </div>
+                            </div>
+                        </div>
+          
+                      <!-- future=-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">? ? ?</h3>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i> The Future
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+            
+        </main>
+
+        <!-- footer -->
+        <footer id="footer">
+            <div class="footer-container">
+                <a href="https://github.com/jeffre-h" target="_blank"><img class="footer-logo" src="assets/img/github.png"></a>
+                <a href="https://www.linkedin.com/in/wong-jeffrey" target="_blank"><img class ="footer-logo" src="assets/img/linkedin.png"></a>
+                <a href="https://www.facebook.com/jeffreywong17" target="_blank"><img class="footer-logo" src="assets/img/facebook.png"></a>
+                <a href="mailto:jwa334@sfu.ca"><img class="footer-logo" src="assets/img/email.png"></a>
+                
+                <div class="footer-text">
+                    <p>&copy; <script>document.write(new Date().getFullYear());</script> Jeffrey Wong. All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+        
+
+        <!-- footer scroll to top-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!-- swiper javascript -->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!-- main javascript -->
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
